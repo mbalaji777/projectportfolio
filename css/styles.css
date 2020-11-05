@@ -26,10 +26,23 @@ a:hover, a:visited, a:link, a:active
 }
 
 .socialsHeader{
-	font-size: 30px;
 	margin-top: 30px;
 	text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .socialsHeader {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 767px) {
+  .socialsHeader {
+    font-size: 20px;
+  }
+}
+
 
 .socialsIcons {
 	border-radius: 5px;
